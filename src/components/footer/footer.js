@@ -25,9 +25,9 @@ export default function Footer() {
         </Box>
       </Container>
       <Text sx={styles.footer.copyright}>
-        All right reserved - Design & Developed by
-        <Link path="https://redq.io/" target="_blank">
-          RedQ, Inc
+        © Copyright Biomart 2023. Todos os direitos reservados - Desenvolvido por:
+        <Link path="https://biomart.com" target="_blank">
+          Biomart
         </Link>
       </Text>
     </footer>

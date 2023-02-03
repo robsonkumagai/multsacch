@@ -4,15 +4,19 @@ export default [
     label: 'Home',
   },
   {
-    path: 'feature',
-    label: 'Features',
+    path: 'core-feature',
+    label: 'Cepas',
+  },
+  {
+    path: 'calf-pasture',
+    label: 'Experimentos',
   },
   {
     path: 'testimonial',
-    label: 'Testimonial',
+    label: 'Benefícios',
   },
   {
     path: 'pricing',
-    label: 'Pricing',
+    label: 'Contato',
   },
 ];

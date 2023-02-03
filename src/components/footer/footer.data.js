@@ -1,31 +1,23 @@
 export default [
   {
-    header: 'About Us',
+    header: 'Informações',
     items: [
       {
-        path: '/',
-        label: 'Support Center',
+        label: 'Telefone: +55 (18) 3237-1000',
       },
       {
-        path: '/',
-        label: 'Customer Support',
+        label: 'Endereço: Rod. Osvaldo Campioni Ascêncio, KM 02',
       },
       {
-        path: '/',
-        label: 'About Us',
+        label: 'Cidade : Martinópolis / SP',
       },
       {
-        path: '/',
-        label: 'Copyright',
-      },
-      {
-        path: '/',
-        label: 'Popular Campaign',
+        label: 'E-mail : contato@biomart.com.br',
       },
     ],
   },
   {
-    header: 'Our Information',
+    header: 'MultSacch',
     items: [
       {
         path: '/',
@@ -50,7 +42,7 @@ export default [
     ],
   },
   {
-    header: 'My Account',
+    header: 'Outros produtos',
     items: [
       {
         path: '/',
@@ -71,27 +63,6 @@ export default [
       {
         path: '/',
         label: 'Permissions',
-      },
-    ],
-  },
-  {
-    header: 'Policy',
-    items: [
-      {
-        path: '/',
-        label: 'Application security',
-      },
-      {
-        path: '/',
-        label: 'Software principles',
-      },
-      {
-        path: '/',
-        label: 'Unwanted software policy',
-      },
-      {
-        path: '/',
-        label: 'Responsible supply chain',
       },
     ],
   },

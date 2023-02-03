@@ -2,10 +2,10 @@ import React from 'react';
 import Head from 'next/head';
 
 export default function SEO({
-  description = 'startup apps landing page',
-  author = 'RedQ, Inc',
+  description = 'MultSacch - Site do produto',
+  author = 'Biomart Nutrição Animal',
   meta,
-  title = 'startup landing title',
+  title = 'MultSacch - Biomart Nutrição Animal',
 }) {
   const metaData = [
     {
@@ -52,6 +52,6 @@ export default function SEO({
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `pt-BR`,
   meta: [],
 };
