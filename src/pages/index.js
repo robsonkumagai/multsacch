@@ -5,7 +5,13 @@ import theme from 'theme';
 import SEO from 'components/seo';
 import Layout from 'components/layout';
 import Banner from 'sections/banner';
+import CalfPasture from 'sections/calf-pasture';
+import CattlePasture from 'sections/cattle-pasture';
+import CattleConfinement from 'sections/cattle-confinement';
 import Feature from 'sections/feature';
+import Information from 'sections/information';
+import Mockup from 'sections/mockup';
+import Probiotics from 'sections/probiotics';
 
 export default function IndexPage() {
   return (
@@ -14,6 +20,12 @@ export default function IndexPage() {
         <Layout>
           <SEO title="MultSacch - Biomart Nutrição Animal" />
           <Banner />
+          <Information />
+          <Probiotics />
+          <Mockup />
+          <CalfPasture />
+          <CattlePasture />
+          <CattleConfinement />
           <Feature />
         </Layout>
       </StickyProvider>
