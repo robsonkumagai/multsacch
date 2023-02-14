@@ -8,9 +8,10 @@ import { FaPlayCircle } from 'react-icons/fa';
 import BannerBG from 'assets/bannerBg.png';
 import BannerThumb from 'assets/banner-thumb.png';
 
-import client1 from 'assets/sponsor/paypal.svg';
-import client2 from 'assets/sponsor/google.svg';
-import client3 from 'assets/sponsor/dropbox.svg';
+import client1 from 'assets/sponsor/bpf.png';
+import client2 from 'assets/sponsor/fda.png';
+import client3 from 'assets/sponsor/ibd.png';
+import client4 from 'assets/sponsor/iso.png';
 
 const data = [
   {
@@ -31,6 +32,12 @@ const data = [
     image: client3,
     title: 'dropbox',
   },
+  // {
+  //   id: 4,
+  //   path: '#',
+  //   image: client4,
+  //   title: 'dropbox',
+  // },
 ];
 
 export default function Banner() {
@@ -44,22 +51,23 @@ export default function Banner() {
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
-            Experience your ultimate mobile application
+            A melhor opção de probiótico para ruminantes.
           </Heading>
           <Text as="p" variant="heroSecondary">
-            Get your blood tests delivered at let home collect sample from the
-            victory of the managements that supplies best design system
-            guidelines ever.
+            Com 8 cepas exclusivas e concentradas, MultSacch é a escolha perfeita para a sua produção.
           </Text>
           <Flex>
-            <Button variant="whiteButton" aria-label="Get Started">
-              Get Started
-            </Button>
+            <a href="https://biomart.com.br" target={'_blank'}>
+              <Button variant="whiteButton" aria-label="Biomart">
+                Biomart
+              </Button>
+            </a>
+
             <>
               <ModalVideo
                 channel="youtube"
                 isOpen={videoOpen}
-                videoId="ZNA9rmDsYVE"
+                videoId="gCm6-bdMg_E"
                 onClose={() => setVideoOpen(false)}
               />
               <Button
@@ -67,12 +75,12 @@ export default function Banner() {
                 aria-label="Watch Video"
                 onClick={handleClick}
               >
-                <FaPlayCircle /> Watch Video
+                <FaPlayCircle /> Vídeo institucional
               </Button>
             </>
           </Flex>
           <Flex sx={styles.sponsorBox}>
-            <Text sx={styles.sponsorTitle}>Sponsored by:</Text>
+            {/* <Text sx={styles.sponsorTitle}>Certificações:</Text> */}
             <Box sx={styles.sponsorBox.sponsor}>
               {data.map((item, index) => (
                 <Link path={item.path} key={`client-key${index}`}>
@@ -137,6 +145,7 @@ const styles = {
     pt: ['35px', null, null, null, null, '45px'],
     flexDirection: ['column', null, 'row'],
     sponsor: {
+      width: '220px',
       display: 'flex',
       alignItems: 'center',
       '> a': {
