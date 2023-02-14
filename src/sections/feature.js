@@ -10,54 +10,86 @@ import Setting from 'assets/feature/setting.svg';
 import Design from 'assets/feature/design.svg';
 import Chat from 'assets/feature/chat.svg';
 
+
+import Estresse from 'assets/feature/estresse.svg';
+import Gordura from 'assets/feature/gordura.svg';
+import Leite from 'assets/feature/leite.svg';
+import Materia from 'assets/feature/materiaseca.svg';
+
+
+
 const data = [
   {
     id: 1,
-    imgSrc: Smart,
-    altText: 'Smart',
-    title: 'Smart Features',
+    imgSrc: Design,
+    altText: 'Productivity',
+    title: 'Ganho de peso',
     text:
-      'Get your blood tests delivered at let home collect sample from the victory of the managements.',
+      'Maior ganho de peso;',
   },
   {
     id: 2,
     imgSrc: Winner,
     altText: 'Performance',
-    title: 'Fast Performance',
+    title: 'Metabolismo',
     text:
-      'Get your blood tests delivered at let home collect sample from the victory of the managements.',
+      'Harmozina o sistema digestivo e equilibra o metabolismo animal;',
   },
   {
     id: 3,
     imgSrc: Cloud,
     altText: 'Content',
-    title: 'Unlimited Content',
+    title: 'Ambiente ruminal',
     text:
-      'Get your blood tests delivered at let home collect sample from the victory of the managements.',
+      'Melhora o ambiente ruminal e intestinal;',
   },
   {
     id: 4,
     imgSrc: Setting,
     altText: 'Customization',
-    title: 'Unlimited Customization',
+    title: 'Digestibilidade',
     text:
-      'Get your blood tests delivered at let home collect sample from the victory of the managements.',
+      'Maior digestibilidade de fibras;',
   },
   {
     id: 5,
-    imgSrc: Design,
-    altText: 'Productivity',
-    title: 'Boost Productivity',
+    imgSrc: Smart,
+    altText: 'Smart',
+    title: 'Rumen e intestinos',
     text:
-      'Get your blood tests delivered at let home collect sample from the victory of the managements.',
+      'Restabelece, estimula e equilibra a população biológica do rúmen e intestinos;',
   },
   {
     id: 6,
     imgSrc: Chat,
     altText: 'Support',
-    title: 'Customer Support',
+    title: 'Crescimento',
     text:
-      'Get your blood tests delivered at let home collect sample from the victory of the managements.',
+      'Maior crescimento;',
+  },
+  {
+    id: 7,
+    imgSrc: Materia,
+    altText: 'Support',
+    title: 'Matéria seca',
+    text:
+      'Aumenta a ingestão de matéria seca;',
+  },
+  {
+    id: 8,
+    imgSrc: Leite,
+    altText: 'Support',
+    title: 'Leite',
+    text:
+      'Aumenta a produção e percentual de gordura no leite;',
+  },
+  {
+    id: 9,
+    imgSrc: Estresse,
+    altText: 'Support',
+    title: 'Estresse',
+    text:
+      'Reduz o estresse.',
   },
 ];
 
@@ -66,8 +98,8 @@ export default function Feature() {
     <section sx={{ variant: 'section.feature' }}>
       <Container>
         <SectionHeader
-          slogan="Quality features"
-          title="Meet exciting feature of app"
+          slogan="MultSacch"
+          title="Confira 10 benefícios do probiótico MultSacch"
         />
 
         <Grid sx={styles.grid}>
