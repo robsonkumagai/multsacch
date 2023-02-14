@@ -1,5 +1,6 @@
 /** @jsx jsx */
-import { jsx, Image, Box, Heading, Text } from 'theme-ui';
+import { jsx, Box, Container, Heading, Text } from 'theme-ui';
+import Image from './image';
 
 export default function FeatureCardColumn({
   src,
@@ -8,42 +9,62 @@ export default function FeatureCardColumn({
   text,
 }) {
   return (
-    <Box sx={styles.card}>
-      <Image src={src} alt={altText} sx={styles.img} />
-
-      <Box sx={styles.wrapper}>
-        <Heading sx={styles.wrapper.title}>{title}</Heading>
-        <Text sx={styles.wrapper.subTitle}>{text}</Text>
+    <Container sx={styles.card}>
+      <Box sx={styles.box}>
+        <Image src={src} alt={altText} sx={styles.img} />
       </Box>
-    </Box>
+      <Box>
+        <Heading sx={styles.wrapper.title}><span sx={styles.wrapper.numberTitle}>{title}</span> <br></br>Bilhões UFC/g</Heading>
+        <Text sx={styles.wrapper.subTitle}>{text}<br></br>3,0x10 UFC/g</Text>
+      </Box>
+    </Container>
   );
 }
 
 const styles = {
   card: {
-    display: 'flex',
-    alignItems: 'flex-start',
+    // display: 'flex',
+    // alignItems: 'flex-start',
     textAlign: 'center',
     flexDirection: 'column',
+    display: 'block',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+  },
+  box: {
+    // backgroundColor: 'red',
+    height: '180px',
+    maxHeight: '180px',
+    // width: '180px'
+
   },
   img: {
-    mx: 'auto',
-    mb: [3, null, 4, null, null, 5],
-    width: ['80px', '90px', null, null, null, '100px', 'auto'],
+    width: '170',
+    height: '150px',
+    display: 'block',
+    marginLeft: 'auto',
+    marginRight: 'auto',
   },
   wrapper: {
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
     title: {
-      fontSize: [3, null, null, null, null, 4],
+      fontSize: [5, null, null, null, null, 5],
       color: 'heading_secondary',
       lineHeight: 1.4,
       fontWeight: 700,
       mb: [2, null, null, null, null, 3],
     },
-
+    numberTitle: {
+      fontSize: '48px',
+      lineHeight: 0.7,
+      fontWeight: 1900,
+      color: '#932e8f',
+      fonts: '-apple-system'
+    },
     subTitle: {
+      fontStyle: 'italic',
       fontSize: 1,
       fontWeight: 400,
       lineHeight: [1.85, null, null, 1.9, 2],
