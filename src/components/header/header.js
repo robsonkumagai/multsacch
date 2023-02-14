@@ -3,8 +3,8 @@ import { jsx, Container, Flex, Button } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import { Link } from 'react-scroll';
 import Logo from 'components/logo';
-import LogoDark from 'assets/logo-dark.svg';
-import LogoWhite from 'assets/logo.svg';
+import LogoDark from 'assets/multsacch.png';
+import LogoWhite from 'assets/multsacch.png';
 import { DrawerProvider } from '../../contexts/drawer/drawer.provider';
 import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
@@ -35,9 +35,9 @@ export default function Header({ className }) {
           <Button
             className="donate__btn"
             variant="secondary"
-            aria-label="Get Started"
+            aria-label="Biomart"
           >
-            Get Started
+            Biomart
           </Button>
 
           <MobileDrawer />
