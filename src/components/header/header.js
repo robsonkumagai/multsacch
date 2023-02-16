@@ -4,7 +4,7 @@ import { keyframes } from '@emotion/core';
 import { Link } from 'react-scroll';
 import Logo from 'components/logo';
 import LogoDark from 'assets/multsacch.png';
-import LogoWhite from 'assets/multsacch.png';
+import LogoWhite from 'assets/logobranco.png';
 import { DrawerProvider } from '../../contexts/drawer/drawer.provider';
 import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
