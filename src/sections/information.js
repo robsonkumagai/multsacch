@@ -1,24 +1,31 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import { Container, Box, Grid } from 'theme-ui';
+import { Container, Box, Grid, Button } from 'theme-ui';
 import TextFeature from 'components/text-feature';
 import Image from 'components/image';
 import Partner from 'assets/partner.png';
+
+import Bezerro from 'assets/animais/bezerro.png';
+import Boi from 'assets/animais/bovino.png';
+import Bufalo from 'assets/partner.png';
+import Caprinos from 'assets/partner.png';
+import Vaca from 'assets/partner.png';
+
+
 import { Carousel } from 'react-responsive-carousel';
 
 const data = {
   subTitle: 'Aditivo probiótico super premium',
   title: 'MultSacch',
   description:
-    'MultSacch é um blend super premium composto por bactérias e leveduras vivas utilizadas como aditivo probiótico',
+    'Com cepas exclusivas e selecionadas MultSacch pode ser utilizado em produções de: Bovinos, Bubalinos, Ovinos e Caprinos.',
   btnName: 'Outros produtos',
   btnURL: 'https://biomart.com.br',
 };
 
 export default function Information() {
   return (
-
-    <section sx={{ variant: 'section.partner' }}>
+    <section sx={{ variant: 'section.information' }}>
       <Container sx={styles.containerBox}>
         <Box sx={styles.contentBox}>
           <TextFeature
@@ -30,21 +37,17 @@ export default function Information() {
           />
         </Box>
         <Box sx={{ px: [0, null, '40px', 0] }}>
-          {/* <Image src={Partner} alt="Partner" /> */}
-          <Carousel>
-                <div>
-                    <img src={Partner} />
-                    <p className="legend">Legend 1</p>
-                </div>
-                <div>
-                    <img src={Partner} />
-                    <p className="legend">Legend 2</p>
-                </div>
-                <div>
-                    <img src={Partner} />
-                    <p className="legend">Legend 3</p>
-                </div>
-            </Carousel>
+          <Carousel autoPlay={true} showArrows={true} infiniteLoop={true} showStatus={false}>
+            <div>
+              <Image src={Bezerro} alt="" />
+            </div>
+            <div>
+              <Image src={Boi} alt="" />
+            </div>
+            <div>
+              <Image src={Boi} alt="" />
+            </div>
+          </Carousel>
         </Box>
       </Container>
     </section>
