@@ -14,7 +14,7 @@ export default function Logo({ src, ...rest }) {
       }}
       {...rest}
     >
-      <Image src={src} alt="startup landing logo" width={150}/>
+      <Image src={src} alt="MultSacch Logo" width={150}/>
     </Link>
   );
 }
