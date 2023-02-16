@@ -8,6 +8,7 @@ import 'typeface-dm-sans';
 import 'react-modal-video/css/modal-video.min.css';
 import 'rc-drawer/assets/index.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "animate.css/animate.min.css";
 
 export default function CustomApp({ Component, pageProps }) {
   useEffect(() => {
