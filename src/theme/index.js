@@ -98,20 +98,6 @@ export default {
       pt: '40px',
       pb: '40px'
     },
-
-
-    testimonial: {
-      py: [8, null, 9, null, null, 10],
-      overflow: 'hidden',
-    },
-    securePayment: {
-      overflow: 'hidden',
-      position: 'relative',
-      pt: 9,
-    },
-    faq: {
-      py: [8, null, 9, null, null, 10],
-    },
   },
   sectionHeader: {
     width: '100%',
