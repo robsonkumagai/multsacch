@@ -9,7 +9,7 @@ export default {
     background_secondary: '#F9FBFD', // secondary background color
     border_color: '#E5ECF4', // border color
     primary: '#8a1d86', // primary button and link color
-    secondary: '#8a1d86', // secondary color - can be used for hover states
+    secondary: '#a79f88', // secondary color - can be used for hover states
     muted: '#7B8188', // muted color
     accent: '#609', // a contrast color for emphasizing UI
     yellow: '#F6C416',
