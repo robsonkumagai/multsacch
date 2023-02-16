@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Heading, Text } from 'theme-ui';
 import Image from './image';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export default function ProbioticsCardColumn({
   src,
@@ -10,9 +11,12 @@ export default function ProbioticsCardColumn({
 }) {
   return (
     <Container sx={styles.card}>
-      <Box sx={styles.box}>
-        <Image src={src} alt={altText} sx={styles.img} />
-      </Box>
+      <AnimationOnScroll initiallyVisible={true} animateIn="animate__zoomIn">
+        <Box sx={styles.box}>
+          <Image src={src} alt={altText} sx={styles.img} />
+        </Box>
+      </AnimationOnScroll>
+
       <Box>
         <Heading sx={styles.wrapper.title}><span sx={styles.wrapper.numberTitle}>{title}</span> <br></br>Bilhões UFC/g</Heading>
         <Text sx={styles.wrapper.subTitle}>{text}<br></br>3,0x10 UFC/g</Text>

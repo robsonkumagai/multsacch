@@ -5,6 +5,7 @@ import SectionHeader from 'components/section-header';
 import PatternBG from 'assets/bg5.png';
 import Charts from 'components/chart';
 import CalfPastureTable from 'components/table/calf-pasture-table';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const chartDataKg = ([
     {
@@ -61,13 +62,15 @@ export default function CalfPasture() {
     return (
         <section sx={styles.workflow} id="calf-pasture">
             <Container>
-                <SectionHeader
-                    slogan="Efeito da suplementação de bezerros em regime extensivo a pasto"
-                    title="Com a utilização do aditivo probiótico MultSacch"
-                    isWhite={true}
-                />
-                <CalfPastureTable></CalfPastureTable>
+                <AnimationOnScroll animateIn="animate__flash">
+                    <SectionHeader
+                        slogan="Efeito da suplementação de bezerros em regime extensivo a pasto"
+                        title="Com a utilização do aditivo probiótico MultSacch"
+                        isWhite={true}
+                    />
+                </AnimationOnScroll>
 
+                <CalfPastureTable></CalfPastureTable>
 
                 <Grid sx={styles.grid}>
                     {chartDataKg.map((it) => (
@@ -82,6 +85,7 @@ export default function CalfPasture() {
                         />
                     ))}
                 </Grid>
+
                 <Grid sx={styles.grid2}>
                     {chartDataGr.map((it) => (
                         <Charts
@@ -95,9 +99,8 @@ export default function CalfPasture() {
                         />
                     ))}
                 </Grid>
+
             </Container>
-
-
         </section>
     );
 }

@@ -7,14 +7,7 @@ import Dish from 'assets/dish.png';
 
 import Acidophilus from 'assets/acidophilusdish.png';
 import Subtilis from 'assets/subtilisdish.png';
-import Bubalinos from 'assets/key-feature/bubalinos.svg';
-import Caprinos from 'assets/key-feature/caprinos.svg';
-import Ovinos from 'assets/key-feature/ovinos.svg';
-import Bifidum from 'assets/key-feature/bifidum.png';
-import Buch from 'assets/key-feature/buchneri.png';
 import Casei from 'assets/caseidish.png';
-import Entero from 'assets/key-feature/enterococcus.png';
-import Sacch from 'assets/key-feature/sacch.png';
 
 const data = [
   {

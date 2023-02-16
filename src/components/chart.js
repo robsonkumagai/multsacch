@@ -1,5 +1,6 @@
 import React, { useLayoutEffect, useState } from "react";
 import { Chart } from "react-google-charts";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export default function Charts({ backgroundColor, barColor, fontColor, scale, title, value }) {
     const data = [
@@ -16,8 +17,9 @@ export default function Charts({ backgroundColor, barColor, fontColor, scale, ti
             fillOpacity: 0.2
         },
         animation: {
-            duration: 1000,
+            duration: 5000,
             easing: 'out',
+            startup: true
         },
         vAxis: {
             title: 'Rating (scale of 1-10)',
@@ -29,13 +31,15 @@ export default function Charts({ backgroundColor, barColor, fontColor, scale, ti
     };
 
     return (
-        <Chart
-            chartType="ColumnChart"
-            width="100%"
-            height="400px"
-            data={data}
-            options={options}
-        />
+        <AnimationOnScroll initiallyVisible={true} animateIn="animate__fadeInUp">
+            <Chart
+                chartType="ColumnChart"
+                width="100%"
+                height="400px"
+                data={data}
+                options={options}
+            />
+        </AnimationOnScroll>
     );
 }
 

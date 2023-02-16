@@ -5,6 +5,8 @@ import React, { useState } from 'react';
 import ModalVideo from 'react-modal-video';
 import { Link } from 'components/link';
 import { FaPlayCircle } from 'react-icons/fa';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+
 import BannerBG from 'assets/11.png';
 import BannerThumb from 'assets/banner-thumb.png';
 
@@ -50,9 +52,12 @@ export default function Banner() {
     <section sx={styles.banner} id="home">
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
-          <Heading as="h1" variant="heroPrimary">
-            A melhor opção de probiótico para ruminantes.
-          </Heading>
+          <AnimationOnScroll animateIn="animate__zoomIn">
+            <Heading as="h1" variant="heroPrimary" sx={styles.banner.h1}>
+              A melhor opção de probiótico para ruminantes.
+            </Heading>
+          </AnimationOnScroll>
+
           <Text as="p" variant="heroSecondary">
             Com 8 cepas exclusivas e concentradas, MultSacch é a escolha perfeita para a sua produção.
           </Text>
@@ -131,7 +136,7 @@ const styles = {
       overflow: 'hidden',
       textAlign: 'right',
       width: '100%',
-    },
+    }
   },
   sponsorTitle: {
     color: 'white',

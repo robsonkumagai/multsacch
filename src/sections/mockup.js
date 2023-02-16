@@ -2,9 +2,9 @@
 import { jsx } from 'theme-ui';
 import { Image, Container, Box, Grid, Text, Heading } from 'theme-ui';
 import TextFeature from 'components/text-feature';
-import CoreFeatureThumb from 'assets/saco.png';
-import Briefcase from 'assets/core-feature/briefcase.svg';
-import Secure from 'assets/core-feature/secure.svg';
+import CoreFeatureThumb from 'assets/mockup/saco.png';
+import Briefcase from 'assets/mockup/briefcase.svg';
+import Secure from 'assets/mockup/secure.svg';
 
 const data = {
     subTitle: 'MultSacch',
@@ -138,6 +138,7 @@ const styles = {
         height: 'auto',
         flexShrink: 0,
         mr: [3, 4],
+        paddingRight: "20px"
     },
     wrapper: {
         width: '100%',

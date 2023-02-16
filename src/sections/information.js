@@ -1,16 +1,15 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import { Container, Box, Grid, Button } from 'theme-ui';
+import { Container, Box } from 'theme-ui';
 import TextFeature from 'components/text-feature';
 import Image from 'components/image';
 import Partner from 'assets/partner.png';
 
-import Bezerro from 'assets/animais/bezerro.png';
-import Boi from 'assets/animais/bovino.png';
+import Bezerro from 'assets/animals/bezerro.png';
+import Boi from 'assets/animals/bovino.png';
 import Bufalo from 'assets/partner.png';
 import Caprinos from 'assets/partner.png';
 import Vaca from 'assets/partner.png';
-
 
 import { Carousel } from 'react-responsive-carousel';
 
@@ -22,6 +21,24 @@ const data = {
   btnName: 'Outros produtos',
   btnURL: 'https://biomart.com.br',
 };
+
+const dataImg = [
+  {
+    id: 1,
+    imgSrc: Bezerro,
+    altText: 'Bactérias e leveduras vivas'
+  },
+  {
+    id: 2,
+    imgSrc: Boi,
+    altText: 'Tecnologia própria'
+  },
+  {
+    id: 3,
+    imgSrc: Boi,
+    altText: 'Tecnologia própria'
+  }
+];
 
 export default function Information() {
   return (
@@ -38,15 +55,9 @@ export default function Information() {
         </Box>
         <Box sx={{ px: [0, null, '40px', 0] }}>
           <Carousel autoPlay={true} showArrows={true} infiniteLoop={true} showStatus={false}>
-            <div>
-              <Image src={Bezerro} alt="" />
-            </div>
-            <div>
-              <Image src={Boi} alt="" />
-            </div>
-            <div>
-              <Image src={Boi} alt="" />
-            </div>
+            {dataImg.map((it) => (
+              <Image src={it.imgSrc} alt={it.altText} id={it.id} sx={styles.img}/>
+            ))}
           </Carousel>
         </Box>
       </Container>
@@ -74,5 +85,8 @@ const styles = {
   },
   gridBox: {
     paddingTop: '20px',
+  },
+  img: {
+      // opacity: 0.3,
   }
 };

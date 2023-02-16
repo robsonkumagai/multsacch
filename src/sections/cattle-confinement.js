@@ -5,6 +5,7 @@ import SectionHeader from 'components/section-header';
 import PatternBG from 'assets/bg6.png';
 import Charts from 'components/chart';
 import CattleConfinementTable from 'components/table/cattle-confinement-table';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const chartData = ([
     {
@@ -88,11 +89,13 @@ export default function CattleConfinement() {
     return (
         <section sx={styles.workflow} id="cattle-confinement">
             <Container>
-                <SectionHeader
-                    slogan="Efeito da suplementação de bovinos terminandos em confinamento"
-                    title="Com a utilização do aditivo probiótico MultSacch"
-                    isWhite={true}
-                />
+                <AnimationOnScroll animateIn="animate__flash">
+                    <SectionHeader
+                        slogan="Efeito da suplementação de bovinos terminandos em confinamento"
+                        title="Com a utilização do aditivo probiótico MultSacch"
+                        isWhite={true}
+                    />
+                </AnimationOnScroll>
 
                 <CattleConfinementTable></CattleConfinementTable>
 

@@ -5,6 +5,7 @@ import SectionHeader from 'components/section-header';
 import PatternBG from 'assets/bg4.png';
 import Charts from 'components/chart';
 import CattlePastureTable from 'components/table/cattle-pasture-table';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const chartDataKg = ([
     {
@@ -61,11 +62,13 @@ export default function CattlePasture() {
     return (
         <section sx={styles.workflow} id="cattle-pasture">
             <Container>
-                <SectionHeader
-                    slogan="Efeito da suplementação de bovinos em regime extensivo a pasto"
-                    title="Com a utilização do aditivo probiótico MultSacch"
-                    isWhite={true}
-                />
+                <AnimationOnScroll animateIn="animate__flash">
+                    <SectionHeader
+                        slogan="Efeito da suplementação de bovinos em regime extensivo a pasto"
+                        title="Com a utilização do aditivo probiótico MultSacch"
+                        isWhite={true}
+                    />
+                </AnimationOnScroll>
 
                 <CattlePastureTable></CattlePastureTable>
                 <Grid sx={styles.grid}>

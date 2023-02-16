@@ -1,66 +1,66 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+
 import SectionHeader from 'components/section-header';
 import BenefitsCard from 'components/benefits-card.js';
-import Smart from 'assets/feature/smart.svg';
-import Winner from 'assets/feature/winner.svg';
-import Cloud from 'assets/feature/cloud.svg';
-import Setting from 'assets/feature/setting.svg';
-import Design from 'assets/feature/design.svg';
-import Chat from 'assets/feature/chat.svg';
 
-
-import Estresse from 'assets/feature/estresse.svg';
-import Gordura from 'assets/feature/gordura.svg';
-import Leite from 'assets/feature/leite.svg';
-import Materia from 'assets/feature/materiaseca.svg';
+import Peso from 'assets/benefits/peso.svg';
+import Metabolismo from 'assets/benefits/metabolismo.svg';
+import Ruminal from 'assets/benefits/ruminal.svg';
+import Digestibilidade from 'assets/benefits/digestibilidade.svg';
+import Rumen from 'assets/benefits/rumen.svg';
+import Crescimento from 'assets/benefits/crescimento.svg';
+import Materia from 'assets/benefits/materiaseca.svg';
+import Leite from 'assets/benefits/leite.svg';
+import Estresse from 'assets/benefits/estresse.svg';
 
 const data = [
   {
     id: 1,
-    imgSrc: Design,
-    altText: 'Productivity',
+    imgSrc: Peso,
+    altText: 'Ganho de peso com a utilização de probióticos.',
     title: 'Ganho de peso',
     text:
       'Maior ganho de peso;',
   },
   {
     id: 2,
-    imgSrc: Winner,
-    altText: 'Performance',
+    imgSrc: Metabolismo,
+    altText: 'Harmonização do sistema digestivo com a utilização de probióticos.',
     title: 'Metabolismo',
     text:
-      'Harmozina o sistema digestivo e equilibra o metabolismo animal;',
+      'Harmoniza o sistema digestivo e equilibra o metabolismo animal;',
   },
   {
     id: 3,
-    imgSrc: Cloud,
-    altText: 'Content',
+    imgSrc: Ruminal,
+    altText: 'Melhoria do ambiente ruminal com a utilização de probióticos.',
     title: 'Ambiente ruminal',
     text:
       'Melhora o ambiente ruminal e intestinal;',
   },
   {
     id: 4,
-    imgSrc: Setting,
-    altText: 'Customization',
+    imgSrc: Digestibilidade,
+    altText: 'Maior digestibilidade com a utilização de probióticos.',
     title: 'Digestibilidade',
     text:
       'Maior digestibilidade de fibras;',
   },
   {
     id: 5,
-    imgSrc: Smart,
-    altText: 'Smart',
+    imgSrc: Rumen,
+    altText: 'Melhoria da população biológoca do rúmen e intestinos com a utilização de probióticos.',
     title: 'Rumen e intestinos',
     text:
       'Restabelece, estimula e equilibra a população biológica do rúmen e intestinos;',
   },
   {
     id: 6,
-    imgSrc: Chat,
-    altText: 'Support',
+    imgSrc: Crescimento,
+    altText: 'Maior crescimento de animais com a utilização de probióticos.',
     title: 'Crescimento',
     text:
       'Maior crescimento;',
@@ -68,7 +68,7 @@ const data = [
   {
     id: 7,
     imgSrc: Materia,
-    altText: 'Support',
+    altText: 'Aumento da ingestão de matéria seca utilizando probióticos.',
     title: 'Matéria seca',
     text:
       'Aumenta a ingestão de matéria seca;',
@@ -76,7 +76,7 @@ const data = [
   {
     id: 8,
     imgSrc: Leite,
-    altText: 'Support',
+    altText: 'Aumento da produção de leite com a utilização de probióticos.',
     title: 'Leite',
     text:
       'Aumenta a produção e percentual de gordura no leite;',
@@ -84,7 +84,7 @@ const data = [
   {
     id: 9,
     imgSrc: Estresse,
-    altText: 'Support',
+    altText: 'Redução do estresse animal com a utilização de probióticos.',
     title: 'Estresse',
     text:
       'Reduz o estresse.',
@@ -95,10 +95,12 @@ export default function Benefits() {
   return (
     <section sx={{ variant: 'section.benefits' }} id="benefits">
       <Container>
-        <SectionHeader
-          slogan="MultSacch"
-          title="Confira 9 benefícios do probiótico MultSacch"
-        />
+        <AnimationOnScroll animateIn="animate__flash">
+          <SectionHeader
+            slogan="MultSacch"
+            title="Confira 9 benefícios do probiótico MultSacch"
+          />
+        </AnimationOnScroll>
 
         <Grid sx={styles.grid}>
           {data.map((item) => (
