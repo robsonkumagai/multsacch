@@ -86,7 +86,7 @@ const chartData2 = ([
 
 export default function CattleConfinement() {
     return (
-        <section sx={styles.workflow}>
+        <section sx={styles.workflow} id="cattle-confinement">
             <Container>
                 <SectionHeader
                     slogan="Efeito da suplementação de bovinos terminandos em confinamento"

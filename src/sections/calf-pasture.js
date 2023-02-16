@@ -59,7 +59,7 @@ const chartDataGr = ([
 
 export default function CalfPasture() {
     return (
-        <section sx={styles.workflow}>
+        <section sx={styles.workflow} id="calf-pasture">
             <Container>
                 <SectionHeader
                     slogan="Efeito da suplementação de bezerros em regime extensivo a pasto"

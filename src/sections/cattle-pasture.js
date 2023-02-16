@@ -59,7 +59,7 @@ const chartDataGr = ([
 
 export default function CattlePasture() {
     return (
-        <section sx={styles.workflow}>
+        <section sx={styles.workflow} id="cattle-pasture">
             <Container>
                 <SectionHeader
                     slogan="Efeito da suplementação de bovinos em regime extensivo a pasto"

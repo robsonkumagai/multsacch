@@ -93,7 +93,7 @@ const data = [
 
 export default function Benefits() {
   return (
-    <section sx={{ variant: 'section.benefits' }}>
+    <section sx={{ variant: 'section.benefits' }} id="benefits">
       <Container>
         <SectionHeader
           slogan="MultSacch"
