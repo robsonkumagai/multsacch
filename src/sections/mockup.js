@@ -8,7 +8,7 @@ import Secure from 'assets/core-feature/secure.svg';
 
 const data = {
     subTitle: 'MultSacch',
-    title: 'É um blend de bactérias e leveduras vivas utilizadas como aditivo probiótico.',
+    title: 'Um blend de bactérias e leveduras vivas utilizadas como aditivo probiótico.',
     features: [
         {
             id: 1,
@@ -31,7 +31,7 @@ const data = {
 
 export default function Mockup() {
     return (
-        <section id="core-feature">
+        <section id="core-feature" sx={{ variant: 'section.mockup' }}>
             <Container sx={styles.containerBox}>
                 <Box sx={styles.thumbnail}>
                     <Image src={CoreFeatureThumb} alt="Thumbnail" height={400} />
@@ -44,7 +44,7 @@ export default function Mockup() {
                     <Grid gap="15px 0" columns={1} sx={styles.grid}>
                         {data.features.map((item) => (
                             <Box sx={styles.card} key={item.id}>
-                                {/* <Image src={item.imgSrc} alt={item.altText} style={styles.icon} /> */}
+                                <Image src={item.imgSrc} alt={item.altText} style={styles.icon} />
 
                                 <Box sx={styles.wrapper}>
                                     <Heading sx={styles.wrapper.title}>{item.title}</Heading>
