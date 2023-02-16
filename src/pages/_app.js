@@ -5,7 +5,6 @@ import { initGA, logPageView } from 'analytics';
 import 'typeface-dm-sans';
 
 // Load other package css file
-import 'react-multi-carousel/lib/styles.css';
 import 'react-modal-video/css/modal-video.min.css';
 import 'rc-drawer/assets/index.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
