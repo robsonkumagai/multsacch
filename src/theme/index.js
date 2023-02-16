@@ -84,16 +84,22 @@ export default {
     main: {},
   },
   section: {
-    keyFeature: {
-      py: [8, null, 9, null, null, 10],
+    information: {
+      pt: '40px',
+      pb: '40px'
     },
-    feature: {
-      py: [8, null, 9, null, null, 10],
+    mockup: {
+      pb: '40px'
     },
-    partner: {
-      pt: [2, null, null, 5],
-      pb: [8, null, 9, null, null, 10],
+    probiotics: {
+      pb: '40px'
     },
+    benefits: {
+      pt: '40px',
+      pb: '40px'
+    },
+
+
     testimonial: {
       py: [8, null, 9, null, null, 10],
       overflow: 'hidden',
