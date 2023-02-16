@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import ModalVideo from 'react-modal-video';
 import { Link } from 'components/link';
 import { FaPlayCircle } from 'react-icons/fa';
-import BannerBG from 'assets/bannerBg.png';
+import BannerBG from 'assets/11.png';
 import BannerThumb from 'assets/banner-thumb.png';
 
 import client1 from 'assets/sponsor/bpf.png';
@@ -92,7 +92,7 @@ export default function Banner() {
         </Box>
 
         <Box sx={styles.banner.imageBox}>
-          <Image src={BannerThumb} alt="banner" />
+          {/* <Image src={BannerThumb} alt="banner" /> */}
         </Box>
       </Container>
     </section>
