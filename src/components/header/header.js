@@ -31,15 +31,15 @@ export default function Header({ className }) {
               </Link>
             ))}
           </Flex>
-
-          <Button
-            className="donate__btn"
-            variant="secondary"
-            aria-label="Biomart"
-          >
-            Biomart
-          </Button>
-
+          <a href="https://biomart.com.br" target={'_blank'}>
+            <Button
+              className="donate__btn"
+              variant="secondary"
+              aria-label="Biomart"
+            >
+              Biomart
+            </Button>
+          </a>
           <MobileDrawer />
         </Container>
       </header>
@@ -61,7 +61,7 @@ const positionAnim = keyframes`
 
 const styles = {
   header: {
-    color: 'white',
+    color: '#fff',
     fontWeight: 'normal',
     py: 4,
     width: '100%',
@@ -114,8 +114,8 @@ const styles = {
       cursor: 'pointer',
       lineHeight: '1.2',
       '&.active': {
-        color: 'secondary',
-      },
+        color: 'secondary'
+      }
     },
   },
 };

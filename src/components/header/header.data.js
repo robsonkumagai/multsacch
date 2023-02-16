@@ -4,7 +4,7 @@ export default [
     label: 'Home',
   },
   {
-    path: 'core-feature',
+    path: 'probiotics',
     label: 'Cepas',
   },
   {
@@ -12,7 +12,7 @@ export default [
     label: 'Experimentos',
   },
   {
-    path: 'testimonial',
+    path: 'benefits',
     label: 'Benefícios',
   },
   {
