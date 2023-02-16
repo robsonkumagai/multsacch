@@ -2,7 +2,7 @@
 import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from '../components/section-header';
-import FeatureCardColumn from 'components/feature-card-column.js';
+import ProbioticsCardColumn from 'components/probiotics-card-column.js';
 import Dish from 'assets/dish.png';
 
 import Acidophilus from 'assets/acidophilusdish.png';
@@ -86,7 +86,7 @@ export default function Probiotics() {
 
         <Grid sx={styles.grid}>
           {data.map((item) => (
-            <FeatureCardColumn
+            <ProbioticsCardColumn
               key={item.id}
               src={item.imgSrc}
               alt={item.title}
