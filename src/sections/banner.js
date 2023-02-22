@@ -6,40 +6,43 @@ import ModalVideo from 'react-modal-video';
 import { Link } from 'components/link';
 import { FaPlayCircle } from 'react-icons/fa';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import { keyframes } from '@emotion/core';
 
+import Bacilos from 'assets/bacilos.png';
 import BannerBG from 'assets/11.png';
 import BannerThumb from 'assets/banner-thumb.png';
 
-import client1 from 'assets/sponsor/bpf.png';
-import client2 from 'assets/sponsor/fda.png';
-import client3 from 'assets/sponsor/ibd.png';
-import client4 from 'assets/sponsor/iso.png';
+import Bpf from 'assets/certificates/bpf.svg';
+import Fda from 'assets/certificates/fda.svg';
+import Ibd from 'assets/certificates/ibd.svg';
+import Iso from 'assets/certificates/iso.svg';
+
 
 const data = [
   {
     id: 1,
-    path: '#',
-    image: client1,
-    title: 'paypal',
+    path: 'https://sindiracoes.org.br/tag/bpf/',
+    image: Bpf,
+    title: 'Certificação BPF da Biomart Nutrição Animal',
   },
   {
     id: 2,
-    path: '#',
-    image: client2,
-    title: 'google',
+    path: 'https://www.fda.gov/',
+    image: Fda,
+    title: 'Certificação FDA da Biomart Nutrição Animal',
   },
   {
     id: 3,
-    path: '#',
-    image: client3,
-    title: 'dropbox',
+    path: 'https://www.ibd.com.br/',
+    image: Ibd,
+    title: 'Certificação IBD da Biomart Nutrição Animal',
   },
-  // {
-  //   id: 4,
-  //   path: '#',
-  //   image: client4,
-  //   title: 'dropbox',
-  // },
+  {
+    id: 4,
+    path: 'http://qmsbrasil.com.br/certificacao-iso-9001/',
+    image: Iso,
+    title: 'Certificação ISO da Biomart Nutrição Animal',
+  },
 ];
 
 export default function Banner() {
@@ -51,6 +54,11 @@ export default function Banner() {
   return (
     <section sx={styles.banner} id="home">
       <Container sx={styles.banner.container}>
+        <AnimationOnScroll animateIn="animate__zoomInDown">
+          <div sx={styles.avatar}>
+            <img src={Bacilos} alt="Skytsunami" />
+          </div>
+        </AnimationOnScroll>
         <Box sx={styles.banner.contentBox}>
           <AnimationOnScroll animateIn="animate__zoomIn">
             <Heading as="h1" variant="heroPrimary" sx={styles.banner.h1}>
@@ -77,19 +85,18 @@ export default function Banner() {
               />
               <Button
                 variant="textButton"
-                aria-label="Watch Video"
+                aria-label="Vídeo institucional da Biomart Nutrição Animal"
                 onClick={handleClick}
               >
                 <FaPlayCircle /> Vídeo institucional
               </Button>
             </>
           </Flex>
-          <Flex sx={styles.sponsorBox}>
-            {/* <Text sx={styles.sponsorTitle}>Certificações:</Text> */}
-            <Box sx={styles.sponsorBox.sponsor}>
+          <Flex sx={styles.certificationBox}>
+            <Box sx={styles.certificationBox.certifications}>
               {data.map((item, index) => (
-                <Link path={item.path} key={`client-key${index}`}>
-                  <Image src={item.image} alt={item.title} />
+                <Link path={item.path} key={`client-key${index}`} target="_blank">
+                  <Image src={item.image} alt={item.title} sx={styles.certificationBox.svg} />
                 </Link>
               ))}
             </Box>
@@ -103,6 +110,12 @@ export default function Banner() {
     </section>
   );
 }
+
+const positionAnim = keyframes`
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); } 
+`;
 
 const styles = {
   banner: {
@@ -125,6 +138,7 @@ const styles = {
       alignItems: 'flex-start',
       flexShrink: 0,
       pt: [0, null, null, null, null, null, 5, 7],
+      zIndex: '0',
     },
     imageBox: {
       display: ['none', null, null, 'block'],
@@ -146,11 +160,10 @@ const styles = {
     flexShrink: 0,
     pb: [2, null, 0],
   },
-  sponsorBox: {
+  certificationBox: {
     pt: ['35px', null, null, null, null, '45px'],
     flexDirection: ['column', null, 'row'],
-    sponsor: {
-      width: '220px',
+    certifications: {
       display: 'flex',
       alignItems: 'center',
       '> a': {
@@ -161,5 +174,25 @@ const styles = {
         },
       },
     },
+    svg: {
+      opacity: 0.90,
+      width: '60px',
+      height: '100%',
+      '&:hover': {
+        opacity: 1,
+        transform: 'translateY(0) scale(1.2)',
+        boxShadow: '0 10px 20px rgba(86, 86, 198, 0.3)'
+      },
+    },
   },
+  avatar: {
+    animationName: `${positionAnim}`,
+    animationDuration: '10s',
+    animationIterationCount: 'infinite',
+    animationTimingFunction: 'ease-in-out',
+    zIndex: '-1',
+    position: 'absolute'
+  }
 };
+
+
