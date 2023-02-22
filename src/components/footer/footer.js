@@ -17,6 +17,7 @@ export default function Footer() {
                     key={i}
                     label={label}
                     sx={styles.footer.link}
+                    target="_blank"
                   />
                 ))}
               </nav>

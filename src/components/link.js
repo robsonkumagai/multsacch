@@ -9,6 +9,14 @@ export function NavLink({ path, label, children, ...rest }) {
   );
 }
 export function Link({ path, label, children, ...rest }) {
+  if (path == '/nolink') {
+    return (
+      <div>
+        <span>{label}</span>
+      </div>
+    )
+  }
+
   return (
     <A {...rest} href={path}>
       {children ? children : label}

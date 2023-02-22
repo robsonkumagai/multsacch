@@ -1,68 +1,53 @@
 export default [
   {
-    header: 'Informações',
+    header: 'Biomart',
     items: [
       {
+        path: 'https://biomart.com.br',
+        label: 'Sobre nós',
+      },
+      {
+        path: 'https://biomart.com.br/probioticos.html',
+        label: 'Produtos',
+      },
+    ],
+  },
+  {
+    header: 'Contato',
+    items: [
+      {
+        path: '/nolink',
         label: 'Telefone: +55 (18) 3237-1000',
       },
       {
-        label: 'Endereço: Rod. Osvaldo Campioni Ascêncio, KM 02',
-      },
-      {
-        label: 'Cidade : Martinópolis / SP',
-      },
-      {
+        path: '/nolink',
         label: 'E-mail : contato@biomart.com.br',
       },
     ],
   },
   {
-    header: 'MultSacch',
+    header: 'Endereço',
     items: [
       {
-        path: '/',
-        label: 'Return Policy ',
+        path: '/nolink',
+        label: 'Endereço: Rod. Osvaldo Campioni Ascêncio, KM 02',
       },
       {
-        path: '/',
-        label: 'Privacy Policy',
-      },
-      {
-        path: '/',
-        label: 'Terms & Conditions',
-      },
-      {
-        path: '/',
-        label: 'Site Map',
-      },
-      {
-        path: '/',
-        label: 'Store Hours',
+        path: '/nolink',
+        label: 'Cidade : Martinópolis / SP',
       },
     ],
   },
   {
-    header: 'Outros produtos',
+    header: 'Informações',
     items: [
       {
-        path: '/',
-        label: 'Press inquiries',
+        path: '/nolink',
+        label: 'CNPJ: 05.971.492.0001-86',
       },
       {
-        path: '/',
-        label: 'Social media ',
-      },
-      {
-        path: '/',
-        label: 'directories',
-      },
-      {
-        path: '/',
-        label: 'Images & B-roll',
-      },
-      {
-        path: '/',
-        label: 'Permissions',
+        path: '/nolink',
+        label: 'Biomart Nutrição Animal Imp. e Exp. LTDA',
       },
     ],
   },
