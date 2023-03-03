@@ -2,9 +2,9 @@
 import { jsx } from 'theme-ui';
 import { Image, Container, Box, Grid, Text, Heading } from 'theme-ui';
 import TextFeature from 'components/text-feature';
-import CoreFeatureThumb from 'assets/mockup/saco.png';
-import Briefcase from 'assets/mockup/briefcase.svg';
-import Secure from 'assets/mockup/secure.svg';
+import MockupMultsacch from 'assets/mockup/mockup.webp';
+import Bacteria from 'assets/mockup/bacteria.svg';
+import Tecnologia from 'assets/mockup/tecnologia.svg';
 
 const data = {
     subTitle: 'MultSacch',
@@ -12,7 +12,7 @@ const data = {
     features: [
         {
             id: 1,
-            imgSrc: Briefcase,
+            imgSrc: Bacteria,
             altText: 'Bactérias e leveduras vivas',
             title: 'Bactérias e leveduras vivas',
             text:
@@ -20,7 +20,7 @@ const data = {
         },
         {
             id: 2,
-            imgSrc: Secure,
+            imgSrc: Tecnologia,
             altText: 'Tecnologia própria',
             title: 'Tecnologia própria',
             text:
@@ -31,10 +31,10 @@ const data = {
 
 export default function Mockup() {
     return (
-        <section id="core-feature" sx={{ variant: 'section.mockup' }}>
+        <section id="mockup" sx={{ variant: 'section.mockup' }}>
             <Container sx={styles.containerBox}>
                 <Box sx={styles.thumbnail}>
-                    <Image src={CoreFeatureThumb} alt="Thumbnail" height={400} />
+                    <Image src={MockupMultsacch} alt="Embalagem do probiótico para ruminantes MultSacch" sx={styles.mockup} />
                 </Box>
                 <Box sx={styles.contentBox}>
                     <Box sx={styles.headingTop}>
@@ -86,8 +86,8 @@ const styles = {
         marginTop: '50px'
     },
     thumbnail: {
-        pl: [0, 5, 0, null, 7, 95],
-        pr: [0, 5, null, null, null, 75, 95],
+        pl: [0, 5, 0, null, 7, 45],
+        pr: [0, 5, null, null, null, 75, 45],
         order: [2, null, null, 0],
     },
     contentBox: {
@@ -134,7 +134,7 @@ const styles = {
     },
 
     icon: {
-        width: ['50px', null, '55px'],
+        width: "100px",
         height: 'auto',
         flexShrink: 0,
         mr: [3, 4],

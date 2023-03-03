@@ -3,68 +3,81 @@ import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from '../components/section-header';
 import ProbioticsCardColumn from 'components/probiotics-card-column.js';
-import Dish from 'assets/dish.png';
 
-import Acidophilus from 'assets/acidophilusdish.png';
-import Subtilis from 'assets/subtilisdish.png';
-import Casei from 'assets/caseidish.png';
+import Acidophilus from 'assets/probiotics/acidophilus.webp';
+import Bifidum from 'assets/probiotics/bifidum.webp';
+import Buchneri from 'assets/probiotics/buchneri.webp';
+import Casei from 'assets/probiotics/casei.webp';
+import Enterococcus from 'assets/probiotics/enterococcus.webp';
+import Lactis from 'assets/probiotics/lactis.webp';
+import Saccharomyces from 'assets/probiotics/sacch.webp';
+import Subtilis from 'assets/probiotics/subtilis.webp';
+
 
 const data = [
   {
     id: 1,
     imgSrc: Subtilis,
-    altText: 'Bacillus subtilis',
+    altText: 'Bactéria Bacillus subtilis utilizada como probiótico para ruminantes.',
+    nivel: '3,00 x 10⁹ UFC/g',
     title: '5.67',
     text: 'Bacillus subtilis',
   },
   {
     id: 2,
-    imgSrc: Dish,
-    altText: 'Bifidobacterium bifidum',
+    imgSrc: Bifidum,
+    altText: 'Bactéria Bifidobacterium bifidum utilizada como probiótico para ruminantes.',
+    nivel: '1,00 x 10⁹ UFC/g',
     title: '25.67',
     text: 'Bifidobacterium bifidum',
   },
   {
     id: 3,
-    imgSrc: Dish,
-    altText: 'Enterococcus faecium',
+    imgSrc: Enterococcus,
+    altText: 'Bactéria Enterococcus faecium utilizada como probiótico para ruminantes.',
+    nivel: '1,00 x 10⁹ UFC/g',
     title: '95.67',
     text: 'Enterococcus faecium',
   },
   {
     id: 4,
     imgSrc: Acidophilus,
-    altText: 'Lactobacillus acidophilus',
+    altText: 'Bactéria Lactobacillus acidophilus utilizada como probiótico para ruminantes.',
+    nivel: '1,00 x 10⁹ UFC/g',
     title: '87.67',
     text: 'Lactobacillus acidophilus',
   },
   {
     id: 5,
-    imgSrc: Dish,
-    altText: 'Lactobacillus buchneri',
+    imgSrc: Buchneri,
+    altText: 'Bactéria Lactobacillus buchneri utilizada como probiótico para ruminantes.',
+    nivel: '2,00 x 10⁹ UFC/g',
     title: '69.67',
     text: 'Lactobacillus buchneri',
   },
   {
     id: 6,
     imgSrc: Casei,
-    altText: 'Lactobacillus casei',
+    altText: 'Bactéria Lactobacillus casei utilizada como probiótico para ruminantes.',
+    nivel: '1,00 x 10⁹ UFC/g',
     title: '25.67',
     text: 'Lactobacillus casei',
   },
   {
     id: 7,
-    imgSrc: Dish,
-    altText: 'Lactobacillus lactis',
+    imgSrc: Lactis,
+    altText: 'Bactéria Lactobacillus lactis utilizada como probiótico para ruminantes.',
+    nivel: '1,00 x 10⁹ UFC/g',
     title: '54.67',
     text: 'Lactobacillus lactis',
   },
   {
     id: 8,
-    imgSrc: Dish,
-    altText: 'Saccharomyces cerivisiae',
+    imgSrc: Saccharomyces,
+    altText: 'Levedura Saccharomyces cerevisiae utilizada como probiótico para ruminantes.',
+    nivel: '2,00 x 10⁸ UFC/g',
     title: '9.67',
-    text: 'Saccharomyces cerivisiae',
+    text: 'Saccharomyces cerevisiae',
   },
 ];
 
@@ -73,8 +86,8 @@ export default function Probiotics() {
     <section sx={{ variant: 'section.probiotics' }} id="probiotics">
       <Container>
         <SectionHeader
-          slogan="Diversas cepas selecionadas... "
-          title="MultSacch é a melhor escolha de probiótico (Trocar)"
+          slogan="8 cepas selecionadas criteriosamente, totalizando"
+          title="+ de 30 Trilhões UFC/kg de Produto."
         />
 
         <Grid sx={styles.grid}>
@@ -83,6 +96,7 @@ export default function Probiotics() {
               key={item.id}
               src={item.imgSrc}
               alt={item.title}
+              nivel={item.nivel}
               title={item.title}
               text={item.text}
             />

@@ -8,15 +8,13 @@ import { FaPlayCircle } from 'react-icons/fa';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { keyframes } from '@emotion/core';
 
-import Bacilos from 'assets/bacilos.png';
-import BannerBG from 'assets/11.png';
-import BannerThumb from 'assets/banner-thumb.png';
+import Bacilos from 'assets/bacilos.webp';
+import Microscopio from 'assets/microscopio.webp';
 
 import Bpf from 'assets/certificates/bpf.svg';
 import Fda from 'assets/certificates/fda.svg';
 import Ibd from 'assets/certificates/ibd.svg';
 import Iso from 'assets/certificates/iso.svg';
-
 
 const data = [
   {
@@ -55,8 +53,8 @@ export default function Banner() {
     <section sx={styles.banner} id="home">
       <Container sx={styles.banner.container}>
         <AnimationOnScroll animateIn="animate__zoomInDown">
-          <div sx={styles.avatar}>
-            <img src={Bacilos} alt="Skytsunami" />
+          <div sx={styles.bacilos}>
+            <img src={Bacilos} alt="Probióticos para nutrição animal" />
           </div>
         </AnimationOnScroll>
         <Box sx={styles.banner.contentBox}>
@@ -104,7 +102,9 @@ export default function Banner() {
         </Box>
 
         <Box sx={styles.banner.imageBox}>
-          {/* <Image src={BannerThumb} alt="banner" /> */}
+          <AnimationOnScroll animateIn="animate__zoomIn">
+            <Image src={Microscopio} alt="Microscópio para nutrição animal" sx={styles.banner.animation} />
+          </AnimationOnScroll>
         </Box>
       </Container>
     </section>
@@ -117,10 +117,31 @@ const positionAnim = keyframes`
     to   { transform: translate(0, -0px); } 
 `;
 
+const opacityAnim = keyframes`
+    0% {
+      opacity: 0.2;
+    }
+
+    20% {
+      opacity: 0.4;
+    }
+
+    40% {
+      opacity: 0.6;
+    }
+
+    60% {
+      opacity: 0.8;
+    }
+
+    80% {
+      opacity: 1;
+    }
+`;
+
 const styles = {
   banner: {
     overflow: ['hidden', 'initial', null, 'hidden'],
-    backgroundImage: `url(${BannerBG})`,
     backgroundRepeat: `no-repeat`,
     backgroundPosition: 'top left',
     backgroundSize: 'cover',
@@ -128,6 +149,9 @@ const styles = {
     pt: ['150px', null, null, null, null, null, '140px', '130px'],
     pb: ['100px', null, null, '110px', null, 10, '150px'],
     backgroundColor: 'primary',
+    animation: {
+      animation: `${opacityAnim} 10s ease 0s normal both`,
+    },
     container: {
       display: 'flex',
     },
@@ -185,13 +209,16 @@ const styles = {
       },
     },
   },
-  avatar: {
+  bacilos: {
     animationName: `${positionAnim}`,
     animationDuration: '10s',
     animationIterationCount: 'infinite',
     animationTimingFunction: 'ease-in-out',
     zIndex: '-1',
-    position: 'absolute'
+    position: 'absolute',
+    '@media screen and (max-device-width: 480px)': {
+      position: 'fixed'
+    },
   }
 };
 

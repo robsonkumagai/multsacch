@@ -6,6 +6,7 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 export default function ProbioticsCardColumn({
   src,
   altText = 'default alt text',
+  nivel,
   title,
   text,
 }) {
@@ -19,7 +20,8 @@ export default function ProbioticsCardColumn({
 
       <Box>
         <Heading sx={styles.wrapper.title}><span sx={styles.wrapper.numberTitle}>{title}</span> <br></br>Bilhões UFC/g</Heading>
-        <Text sx={styles.wrapper.subTitle}>{text}<br></br>3,0x10 UFC/g</Text>
+        <Text sx={styles.wrapper.subTitle}>{text}</Text>
+        <Text>{nivel}</Text>
       </Box>
     </Container>
   );
@@ -27,8 +29,6 @@ export default function ProbioticsCardColumn({
 
 const styles = {
   card: {
-    // display: 'flex',
-    // alignItems: 'flex-start',
     textAlign: 'center',
     flexDirection: 'column',
     display: 'block',
@@ -36,11 +36,8 @@ const styles = {
     marginRight: 'auto',
   },
   box: {
-    // backgroundColor: 'red',
     height: '180px',
     maxHeight: '180px',
-    // width: '180px'
-
   },
   img: {
     width: '170',
