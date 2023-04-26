@@ -17,8 +17,8 @@ const data = {
   subTitle: 'Aditivo probiótico super premium',
   title: 'MultSacch',
   description:
-    'Com cepas exclusivas e selecionadas MultSacch pode ser utilizado em produções de: Bovinos, Bubalinos, Ovinos e Caprinos.',
-  btnName: 'Outros produtos',
+    'Com cepas exclusivas e selecionadas MultSacch é utilizado na alimentação de bovinos, bubalinos, ovinos e caprinos.',
+  btnName: 'Confira todos os nossos produtos',
   btnURL: 'https://biomart.com.br',
 };
 
@@ -73,7 +73,7 @@ export default function Information() {
               {data.description}
             </Text>
 
-            <Link href={data.btnURL} variant="default" target="_blank">
+            <Link href={data.btnURL} variant="default" target="_blank" sx={styles.btn}>
               <Button variant="primary" aria-label={data.btnName}>
                 {data.btnName}
               </Button>
@@ -93,6 +93,10 @@ export default function Information() {
 }
 
 const styles = {
+  btn: {
+    paddingTop: '20px',
+
+  },
   containerBox: {
     display: 'flex',
     alignItems: 'center',
