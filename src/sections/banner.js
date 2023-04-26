@@ -60,12 +60,12 @@ export default function Banner() {
         <Box sx={styles.banner.contentBox}>
           <AnimationOnScroll animateIn="animate__zoomIn">
             <Heading as="h1" variant="heroPrimary" sx={styles.banner.h1}>
-              A melhor opção de probiótico para ruminantes.
+              MultSacch! <br></br>A melhor opção de probiótico para ruminantes.
             </Heading>
           </AnimationOnScroll>
 
           <Text as="p" variant="heroSecondary">
-            Com 8 cepas exclusivas e concentradas, MultSacch é a escolha perfeita para a sua produção.
+            Produto concentrado contendo 7 cepas de bactérias mais leveduras vivas, MultSacch é a escolha perfeita para otimizar a sua produção.
           </Text>
           <Flex>
             <a href="https://biomart.com.br" target={'_blank'}>

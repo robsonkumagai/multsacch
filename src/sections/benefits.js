@@ -31,7 +31,7 @@ const data = [
     altText: 'Harmonização do sistema digestivo com a utilização de probióticos.',
     title: 'Metabolismo',
     text:
-      'Harmoniza o sistema digestivo e equilibra o metabolismo animal;',
+      'Harmoniza o sistema digestivo e equilibra o metabolismo;',
   },
   {
     id: 3,
@@ -98,7 +98,7 @@ export default function Benefits() {
         <AnimationOnScroll animateIn="animate__flash">
           <SectionHeader
             slogan="MultSacch"
-            title="Confira 9 benefícios do probiótico MultSacch"
+            title="Confira alguns dos principais benefícios do probiótico MultSacch"
           />
         </AnimationOnScroll>
 

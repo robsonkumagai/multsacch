@@ -2,7 +2,7 @@
 import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from 'components/section-header';
-import PatternBG from 'assets/bg5.webp';
+import PatternBG from 'assets/fundo2.webp';
 import Charts from 'components/chart';
 import CalfPastureTable from 'components/table/calf-pasture-table';
 import { AnimationOnScroll } from 'react-animation-on-scroll';

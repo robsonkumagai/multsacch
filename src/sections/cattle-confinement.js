@@ -2,7 +2,7 @@
 import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from 'components/section-header';
-import PatternBG from 'assets/bg6.webp';
+import PatternBG from 'assets/fundo3.webp';
 import Charts from 'components/chart';
 import CattleConfinementTable from 'components/table/cattle-confinement-table';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
@@ -91,7 +91,7 @@ export default function CattleConfinement() {
             <Container>
                 <AnimationOnScroll animateIn="animate__flash">
                     <SectionHeader
-                        slogan="Efeito da suplementação de bovinos terminandos em confinamento"
+                        slogan="Efeito da suplementação de bovinos terminados em confinamento"
                         title="Com a utilização do aditivo probiótico MultSacch"
                         isWhite={true}
                     />
