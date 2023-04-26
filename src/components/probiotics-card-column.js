@@ -8,6 +8,7 @@ export default function ProbioticsCardColumn({
   altText = 'default alt text',
   nivel,
   title,
+  suffix,
   text,
 }) {
   return (
@@ -19,7 +20,7 @@ export default function ProbioticsCardColumn({
       </AnimationOnScroll>
 
       <Box>
-        <Heading sx={styles.wrapper.title}><span sx={styles.wrapper.numberTitle}>{title}</span> <br></br>Bilhões UFC/g</Heading>
+        <Heading sx={styles.wrapper.title}><span sx={styles.wrapper.numberTitle}>{title}</span> <br></br>{suffix} UFC/g</Heading>
         <Text sx={styles.wrapper.subTitle}>{text}</Text>
         <Text>{nivel}</Text>
       </Box>
