@@ -16,7 +16,7 @@ const data = {
             altText: 'Bactérias e leveduras vivas',
             title: 'Bactérias e leveduras vivas',
             text:
-                'MultSacch é composto por cepas criteriosamente escolhidas, garantidas pela sua estabilidade e conferindo funções específicas para a sua produção.',
+                'MultSacch é composto por cepas criteriosamente escolhidas, garantidas pela sua estabilidade e conferindo funções específicas com benefícios capazes de melhorar o desempenho animal.',
         },
         {
             id: 2,
@@ -24,7 +24,7 @@ const data = {
             altText: 'Tecnologia própria',
             title: 'Tecnologia própria',
             text:
-                'O MultSacch é produzido através de tecnologia própria sob um rigoroso controle de qualidade.',
+                'O MultSacch é produzido através de tecnologia própria com rastreabilidade e certificação de qualidade.',
         },
     ],
 };
