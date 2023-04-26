@@ -16,7 +16,7 @@ export default [
     label: 'Benefícios',
   },
   {
-    path: 'pricing',
+    path: 'footer',
     label: 'Contato',
   },
 ];
