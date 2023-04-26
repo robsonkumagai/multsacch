@@ -1,6 +1,8 @@
-import React, { useLayoutEffect, useState } from "react";
+/** @jsx jsx */
+import { jsx } from 'theme-ui';
 import { Chart } from "react-google-charts";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import { Image } from 'theme-ui';
 
 export default function Charts({ backgroundColor, barColor, fontColor, scale, title, value }) {
     const data = [
@@ -22,7 +24,7 @@ export default function Charts({ backgroundColor, barColor, fontColor, scale, ti
             startup: true
         },
         vAxis: {
-            title: 'Rating (scale of 1-10)',
+            // title: 'Rating (scale of 1-10)',
             ticks: scale
         },
         legend: {
@@ -43,10 +45,4 @@ export default function Charts({ backgroundColor, barColor, fontColor, scale, ti
     );
 }
 
-const styles = {
-    div: {
-        width: '100%',
-        height: '100%'
-    }
-}
 
