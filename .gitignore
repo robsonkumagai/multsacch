@@ -21,6 +21,8 @@
 .env.local
 .env.development
 .env.production
+.package-lock.json
+.yarn-json
 
 # debug
 npm-debug.log*
@@ -28,3 +30,5 @@ yarn-debug.log*
 yarn-error.log*
 
 .vercel
+
+package-lock.json

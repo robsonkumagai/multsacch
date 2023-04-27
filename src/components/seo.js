@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 
 export default function SEO({
-  description = 'MultSacch - Site do produto',
+  description = 'MultSacch - Aditivo probiótico para ruminantes',
   author = 'Biomart Nutrição Animal',
   meta,
   title = 'MultSacch - Biomart Nutrição Animal',
