@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import Router from 'next/router';
-import { initGA, logPageView } from 'analytics';
+import { initGA, logPageView } from '../../utils/analytics';
 // Load DM Sans typeface
 import 'typeface-dm-sans';
 
@@ -12,9 +12,12 @@ import "animate.css/animate.min.css";
 
 export default function CustomApp({ Component, pageProps }) {
   useEffect(() => {
-    initGA();
+    if (!window.GA_INITIALIZED) {
+      initGA('G-684YYMPHVH');
+      window.GA_INITIALIZED = true;
+    }
+
     logPageView();
-    Router.events.on('routeChangeComplete', logPageView);
   }, []);
 
   return <Component {...pageProps} />;

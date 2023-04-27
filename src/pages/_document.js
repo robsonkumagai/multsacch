@@ -9,7 +9,19 @@ class CustomDocument extends Document {
   render() {
     return (
       <Html lang="pt-BR">
-        <Head />
+        <Head>
+          <script async src={`https://www.googletagmanager.com/gtag/js?id=G-684YYMPHVH`} />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-684YYMPHVH');
+              `,
+            }}
+          />
+        </Head>
         <body>
           <Main />
           <NextScript />
