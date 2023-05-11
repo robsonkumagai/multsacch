@@ -9,6 +9,9 @@
     "export": "next export",
     "postbuild": "next-sitemap"
   },
+  "engines": {
+    "node": "16.x"
+  },
   "dependencies": {
     "animate.css": "^4.1.1",
     "dotenv": "^8.2.0",
