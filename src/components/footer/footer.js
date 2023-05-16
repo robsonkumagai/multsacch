@@ -2,6 +2,8 @@
 import { jsx, Heading, Box, Container, Text } from 'theme-ui';
 import { Link } from 'components/link';
 import menuItems from './footer.data';
+import CookieConsent from "react-cookie-consent";
+
 export default function Footer() {
   return (
     <footer sx={styles.footer} id="footer">
@@ -31,6 +33,13 @@ export default function Footer() {
           Biomart
         </Link>
       </Text>
+      <CookieConsent
+        buttonText="Aceito"
+        style={{ background: "#a79f88e3", fontSize: "12px" }}
+        buttonStyle={{ background: "#8a1e86", color: "#fff", fontSize: "13px",  }}
+      >
+        Este site utiliza cookies para melhorar a sua experiência. Não rastreamos informações pessoais, apenas utilizamos o Google Analytics para monitorar as visitas do site. Ao continuar navegando, você concorda com o uso de cookies.
+      </CookieConsent>
     </footer>
   );
 }
