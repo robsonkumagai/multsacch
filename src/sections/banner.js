@@ -67,20 +67,13 @@ export default function Banner() {
           <Text as="p" variant="heroSecondary">
             Produto concentrado contendo 7 cepas de bactérias mais leveduras vivas, MultSacch é a escolha perfeita para otimizar a sua produção.
           </Text>
-          <Flex>
-            <a href="https://biomart.com.br" target={'_blank'}>
+          <Flex >
+            <a href="https://biomart.com.br" target={'_blank'} rel="noopener noreferrer">
               <Button variant="whiteButton" aria-label="Biomart">
                 Biomart
               </Button>
             </a>
-
             <>
-              <ModalVideo
-                channel="youtube"
-                isOpen={videoOpen}
-                videoId="gCm6-bdMg_E"
-                onClose={() => setVideoOpen(false)}
-              />
               <Button
                 variant="textButton"
                 aria-label="Vídeo institucional da Biomart Nutrição Animal"
@@ -93,14 +86,21 @@ export default function Banner() {
           <Flex sx={styles.certificationBox}>
             <Box sx={styles.certificationBox.certifications}>
               {data.map((item, index) => (
-                <Link path={item.path} key={`client-key${index}`} target="_blank">
+                <Link path={item.path} key={`client-key${index}`} target="_blank" rel="noopener noreferrer">
                   <Image src={item.image} alt={item.title} sx={styles.certificationBox.svg} />
                 </Link>
               ))}
             </Box>
           </Flex>
         </Box>
-
+        <Box sx={styles.video}>
+          <ModalVideo
+            channel="youtube"
+            isOpen={videoOpen}
+            videoId="gCm6-bdMg_E"
+            onClose={() => setVideoOpen(false)}
+          />
+        </Box>
         <Box sx={styles.banner.imageBox}>
           <AnimationOnScroll animateIn="animate__zoomIn">
             <Image src={Microscopio} alt="Microscópio para nutrição animal" sx={styles.banner.animation} />
@@ -219,6 +219,10 @@ const styles = {
     '@media screen and (max-device-width: 480px)': {
       position: 'fixed'
     },
+  },
+  video: {
+    zIndex: '99',
+    position: 'relative'
   }
 };
 
