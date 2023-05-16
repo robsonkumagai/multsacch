@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 
 export default function SEO({
-  description = 'MultSacch - Aditivo probiótico para ruminantes',
+  description = 'MultSacch - Com cepas exclusivas e selecionadas MultSacch é a melhor opção de aditivo probiótico para bovinos, bubalinos, ovinos e caprinos.Entre em contato e solicite uma cotação.',
   author = 'Biomart Nutrição Animal',
   meta,
   title = 'MultSacch - Biomart Nutrição Animal',
