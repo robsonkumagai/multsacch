@@ -2,9 +2,8 @@
 import { jsx } from 'theme-ui';
 import { Chart } from "react-google-charts";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import { Image } from 'theme-ui';
 
-export default function Charts({ backgroundColor, barColor, fontColor, scale, title, value }) {
+export default function Charts({ barColor, scale, title, value }) {
     const data = [
         ["Element", "Valor", { role: "style" }, { role: 'annotation' }],
         ["Controle", value[0], barColor[0], "Controle"],
@@ -44,5 +43,7 @@ export default function Charts({ backgroundColor, barColor, fontColor, scale, ti
         </AnimationOnScroll>
     );
 }
+
+
 
 
