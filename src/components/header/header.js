@@ -31,7 +31,7 @@ export default function Header({ className }) {
               </Link>
             ))}
           </Flex>
-          <a href="https://biomart.com.br" target={'_blank'}>
+          <a href="https://biomart.com.br" target={'_blank'} rel="noopener noreferrer"> 
             <Button
               className="donate__btn"
               variant="secondary"

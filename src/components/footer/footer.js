@@ -27,7 +27,7 @@ export default function Footer() {
       </Container>
       <Text sx={styles.footer.copyright}>
         © Copyright Biomart 2023. Todos os direitos reservados - Desenvolvido por:
-        <Link path="https://biomart.com" target="_blank">
+        <Link path="https://biomart.com" target="_blank" rel="noopener noreferrer">
           Biomart
         </Link>
       </Text>
