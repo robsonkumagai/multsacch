@@ -12,7 +12,7 @@ export default function BenefitsCard({
       <Image src={src} alt={altText} sx={styles.img} />
 
       <Box sx={styles.wrapper}>
-        <Heading sx={styles.wrapper.title}>{title}</Heading>
+        <Heading as="h3" sx={styles.wrapper.title}>{title}</Heading>
         <Text sx={styles.wrapper.subTitle}>{text}</Text>
       </Box>
     </Box>
