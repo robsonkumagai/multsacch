@@ -35,7 +35,7 @@ export default function Header({ className }) {
             <Button
               className="donate__btn"
               variant="secondary"
-              aria-label="Biomart"
+              role="button"
             >
               Biomart
             </Button>

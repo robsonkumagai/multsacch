@@ -74,7 +74,7 @@ export default function Information() {
             </Text>
 
             <Link href={data.btnURL} variant="default" target="_blank" sx={styles.btn} rel="noopener noreferrer">
-              <Button variant="primary" aria-label={data.btnName}>
+              <Button variant="primary" role="button">
                 {data.btnName}
               </Button>
             </Link>

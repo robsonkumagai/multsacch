@@ -69,14 +69,14 @@ export default function Banner() {
           </Text>
           <Flex >
             <a href="https://biomart.com.br" target={'_blank'} rel="noopener noreferrer">
-              <Button variant="whiteButton" aria-label="Biomart">
+              <Button variant="whiteButton" role="button">
                 Biomart
               </Button>
             </a>
             <>
               <Button
                 variant="textButton"
-                aria-label="Vídeo institucional da Biomart Nutrição Animal"
+                role="button"
                 onClick={handleClick}
               >
                 <FaPlayCircle /> Vídeo institucional
