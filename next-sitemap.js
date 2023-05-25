@@ -1,3 +1,5 @@
+const withSitemap = require('next-sitemap');
+
 module.exports = withSitemap({
   /* configurações do sitemap */
   sitemap: {
