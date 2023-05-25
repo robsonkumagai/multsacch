@@ -1,6 +1,4 @@
-const withSitemap = require('next-sitemap');
-
-module.exports = withSitemap({
+module.exports = ({
   /* configurações do sitemap */
   sitemap: {
     hostname: 'https://www.multsacch.com', // URL base do seu site
