@@ -1,12 +1,12 @@
-module.exports = {
-  siteUrl: 'https://startup-app-modern.vercel.app',
-  generateRobotsTxt: true,
-  // optional
-  // robotsTxtOptions: {
-  //   additionalSitemaps: [
-  //     'https://example.com/my-custom-sitemap-1.xml',
-  //     'https://example.com/my-custom-sitemap-2.xml',
-  //     'https://example.com/my-custom-sitemap-3.xml',
-  //   ],
-  // },
-};
+module.exports = withSitemap({
+  /* configurações do sitemap */
+  sitemap: {
+    hostname: 'https://www.multsacch.com', // URL base do seu site
+    pagesConfig: {
+      '/': {
+        priority: '1.0', // prioridade da página (0.0 a 1.0)
+        changefreq: 'yearly' // frequência de alteração (always, hourly, daily, weekly, monthly, yearly, never)
+      }
+    }
+  },
+});
