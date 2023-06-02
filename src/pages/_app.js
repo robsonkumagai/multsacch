@@ -72,6 +72,7 @@ export default function CustomApp({ Component, pageProps }) {
         title="MultSacch - Aditivo probiótico para ruminantes"
         images={[
           {
+            type: 'ImageObject',
             url: 'https://www.multsacch.com/_next/static/images/mockup-ec874ec14c52d48144db66ea47595a72.webp',
             alt: 'Embalagem do produto MultSacch',
           },
