@@ -74,7 +74,7 @@ export default function CustomApp({ Component, pageProps }) {
           {
             type: 'ImageObject',
             url: 'https://www.multsacch.com/_next/static/images/mockup-ec874ec14c52d48144db66ea47595a72.webp',
-            alt: 'Embalagem do produto MultSacch',
+            caption: 'Embalagem do produto MultSacch',
           },
         ]}
         datePublished="2023-05-11T23:04:13Z"
