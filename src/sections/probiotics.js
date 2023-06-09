@@ -93,7 +93,7 @@ export default function Probiotics() {
     <section sx={{ variant: 'section.probiotics' }} id="probiotics">
       <Container>
         <SectionHeader
-          slogan="8 cepas selecionadas criteriosamente, totalizando"
+          slogan="7 cepas de bactérias + leveduras vivas selecionadas criteriosamente, totalizando"
           title="+ de 10 Bilhões UFC/g de Produto."
         />
 
