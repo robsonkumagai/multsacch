@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { initGA, logPageView } from '../../utils/analytics';
-import { ArticleJsonLd, NextSeo, DefaultSeo } from 'next-seo';
+import { ArticleJsonLd, NextSeo } from 'next-seo';
 
 // Load DM Sans typeface
 import 'typeface-dm-sans';

@@ -18,7 +18,7 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="MultSacch - Biomart Nutrição Animal" />
+          <SEO title="MultSacch - Aditivo probiótico para ruminantes" />
           <Banner />
           <Information />
           <Mockup />
